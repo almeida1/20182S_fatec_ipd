@@ -71,4 +71,16 @@ public class Emprestimo {
 			return false;
 		}
 	}
+
+	public boolean ehDomingo(String data) {
+		boolean isValida = false;
+		DateTimeFormatter fmt = DateTimeFormat.forPattern("yyyy/MM/dd");
+		if (validaData(data) == true) {
+			DateTime umaData = fmt.parseDateTime(data);
+			if (umaData.dayOfWeek().getAsText().equals("Domingo")) {
+				isValida = true;
+			}
+		}
+		return isValida;
+	}
 }

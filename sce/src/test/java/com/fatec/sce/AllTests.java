@@ -8,7 +8,9 @@ import org.junit.runners.Suite.SuiteClasses;
 @SuiteClasses({
 	TestaDB.class, 
 	UC01CadastrarLivro.class, 
-	UC05CadastrarUsuario.class })
+	UC05CadastrarUsuario.class,
+	UC09RegistraEmprestimo.class
+	})
 public class AllTests {
 
 }
